@@ -1,9 +1,12 @@
 const express = require('express')
 const cors = require('cors')
+const connectDb = require('./configs/dbConfig')
 
 const app = express()
 
 require('dotenv').config()
+
+connectDb()
 
 app.use(cors())
 app.use(express.urlencoded({extended: true}))
