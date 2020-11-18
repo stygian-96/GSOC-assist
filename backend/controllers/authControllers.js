@@ -38,18 +38,23 @@ exports.postLogin = (req, res) => {
             res.status(403).send({success: false, msg: 'Authentication Failed, User not found'})
         }
         else{
-            user.comparePassword(req.bdy.password, (err, isMatch) => {
-                if (isMatch && !err) {
-                    const token = jwt.sign({user}, process.env.SECRET_KEY, (err, toen) => {
-                        res.json({
-                            token
+            try{
+                user.comparePassword(req.body.password, (err, isMatch) => {
+                    if (isMatch && !err) {
+                        const token = jwt.sign({user}, process.env.SECRET_KEY, (err, token) => {
+                            res.json({
+                                token
+                            })
                         })
-                    })
-                }
-                else{ 
-                    return res.status(403).send({success: false, msg: 'Authentication failed, wrong password'})
-                }
-            })
+                    }
+                    else{ 
+                        return res.status(403).send({success: false, msg: 'Authentication failed, wrong password'})
+                    }
+                })
+            }
+            catch(err){
+                res.json({success: false, msg: 'Something went wrong'})
+            }
         }
     })
 }
@@ -61,7 +66,7 @@ exports.getUserDetails = (req,res) => {
 }
 
 // Update User Details
-exports.updateUserDetails = (req, res) => {
+exports.updateUserDetails = async(req, res) => {
     try {
         const updatedDetails = await User.updateOne(
             {
