@@ -16,7 +16,7 @@ var userSchema = new Schema({
         required: true
     },
     techStack: {
-        type: Array,
+        type: [String],
         required: false,
     }
 })
