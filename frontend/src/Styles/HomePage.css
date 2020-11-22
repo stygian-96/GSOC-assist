@@ -1,0 +1,17 @@
+/* DropDown */
+
+.dropdown__selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    border: 0.5px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown__list {
+    text-align: center;
+    width: 100px;
+    border: 0.5px solid rgba(0,0,0,0.2);
+}

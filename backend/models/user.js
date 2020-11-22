@@ -20,6 +20,10 @@ var userSchema = new Schema(
         techStack: {
             type: [String],
             required: false,
+        },
+        orgs_prefList: {
+            type: [mongoose.Schema.Types.ObjectId],
+            required: false,
         }
     },
     {
