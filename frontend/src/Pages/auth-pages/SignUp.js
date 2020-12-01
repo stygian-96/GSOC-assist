@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar'
-import {Container,Grid, TextField,makeStyles, Button} from '@material-ui/core'
+import { Container, Grid, TextField, makeStyles, Button } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,19 +14,29 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Login = () => {
+const SignUp = () => {
     const classes = useStyles();
 
     return (
         <div>
             <Navbar />
             <Container maxWidth='xs' className={classes.root}>
-                <Grid container 
-                    justify="center" 
-                    alignItems="center" 
-                    direction="column" 
+                <Grid container
+                    justify="center"
+                    alignItems="center"
+                    direction="column"
                     spacing={3}
                 >
+                    <Grid item>
+                        <TextField
+                            id="outlined-username-input"
+                            label="Username"
+                            type="Text"
+                            autoComplete="current-username"
+                            variant="outlined"
+                            size="small"
+                        />
+                    </Grid>
                     <Grid item>
                         <TextField
                             id="outlined-email-input"
@@ -49,7 +59,7 @@ const Login = () => {
                     </Grid>
                     <Grid item>
                         <Button variant="contained" color="primary" className={classes.LoginButton}>
-                            Log In
+                            Register
                         </Button>
                     </Grid>
                 </Grid>
@@ -58,4 +68,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default SignUp
