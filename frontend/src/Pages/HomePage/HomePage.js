@@ -1,11 +1,17 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar'
+import OPCard from '../../Components/OPCard'
 
 const HomePage = () => {
     return (
         <div>
             <Navbar />
-            HomePage
+            <OPCard />
+            <OPCard />
+            <OPCard />
+            <OPCard />
+            <OPCard />
+            <OPCard />
         </div>
     )
 }

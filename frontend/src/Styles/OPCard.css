@@ -1,0 +1,138 @@
+/* Just for experimental purpose ;P
+    Remove div element with this class!
+*/
+.container{
+    width: 60%;
+}
+
+/* ------ Card classes ------ */
+.opcard{
+    width: 100%;
+    display: flex;
+    border: 1px rgba(0,0,0,0.4) solid;
+    border-bottom: none;
+    position: relative;
+}
+
+/* Orgs/Projects details */
+.details_container{
+    width: 400px;
+}
+
+.logo_container{
+    height: 66px;
+    margin-top: 10px;
+}
+
+.logo_container img{
+    height: 100%;
+}
+
+.title{
+    margin: 6px 12px;
+    font-weight: 500;
+    line-height: 20px;
+    /* Trim extra lines */
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description{
+    margin: 6px 12px 12px 12px;
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 18px;
+
+    /* Trim extra lines */
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Capsules */
+.capsule_container{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 240px;
+    width: 240px;
+    align-content: flex-start;
+    justify-content: center;
+    padding-top: 16px;
+    position: relative;
+}
+
+.capsule{
+    font-size: 14px;
+    margin: 6px 8px;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    border-radius: 15px;
+    border: 1px rgba(0,0,0,0.6) solid;
+    align-content: center;
+    justify-content: center;
+}
+
+.capsule_container .description{
+    position: absolute;
+    bottom: 0;
+}
+
+/* Add to wishlist button */
+.bk_container{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bk{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px rgba(0,0,0,0.6) solid;
+    border-radius: 5px;
+}
+
+@media(max-width:1268px){
+    .details_container{
+        width: 360px;
+    }
+}
+
+@media(max-width:1160px){
+    .details_container{
+        width: 300px;
+    }
+}
+
+
+@media(max-width:1060px){
+    .capsule{
+        display: none;
+    }
+    .details_container{
+        flex-grow: 1;
+    }
+    .logo_container{
+        height: 44px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .capsule_container{
+        min-width: 0;
+    }
+    .capsule_container .description{
+        right: 0;
+    }
+}
