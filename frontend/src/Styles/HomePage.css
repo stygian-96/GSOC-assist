@@ -1,6 +1,6 @@
 svg{
     display: block;
-    margin: auto;
+
 }
 
 /* Top Wrapper*/
@@ -58,6 +58,50 @@ svg{
     }
 }
 
+.recommended-wrapper{
+    margin: 85px auto 0px auto;
+}
+
+.recommended-orgs-wrapper{
+    border: 1px solid #A7A7A7;
+    border-radius: 2px;
+    padding: 0px 20px;
+}
+
+/**/
+.recommended-orgs-list .orgs-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 3px 10px 3px;
+    border-bottom: 1px solid #bebebe;
+    font-size: small;
+    font-weight: 500;
+}
+
+.recommended-orgs-list{
+    overflow-y: scroll;
+    height: 230px;
+    scrollbar-width: none;
+}
+
+.recommended-orgs-list::-webkit-scrollbar{
+    display: none;
+}
+
+.card-container{
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.trending-orgs{
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.recommended-orgs{
+    border-radius: 5px;
+}
+
 /* Search Field Wrapper*/
 
 .search-field-wrapper{
@@ -85,11 +129,3 @@ svg{
     padding: 0px 5px;
 }
 
-/**/
-.recommended-orgs-list .orgs-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 3px 10px 3px;
-    border-bottom: 1px solid #bebebe;
-}
