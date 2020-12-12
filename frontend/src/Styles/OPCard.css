@@ -10,7 +10,7 @@
     width: 100%;
     display: flex;
     border: 1px rgba(0,0,0,0.4) solid;
-    border-bottom: none;
+    border-top: none;
     position: relative;
 }
 
@@ -20,8 +20,11 @@
 }
 
 .logo_container{
-    height: 66px;
+    min-height: 66px;
+    max-height: 66px;
+    height:  66px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .logo_container img{
@@ -121,7 +124,9 @@
         flex-grow: 1;
     }
     .logo_container{
-        height: 44px;
+        min-height: 44px;
+        max-height: 44px;
+        height:  44px;
     }
     .title{
         font-size: 14px;

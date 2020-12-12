@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const OPCard = () => {
+const OPCard = ({title, decription, logoUrl, yrList, noOfTimes}) => {
     const [toggle, setToggle] = useState(false);
 
     const classes = useStyles()
@@ -26,7 +26,7 @@ const OPCard = () => {
             <div className="opcard">
                 <div className="details_container">
                     <div className="logo_container">
-                        <img src="http://lh3.googleusercontent.com/uPn---A285wRChEDmLTxZrAA76uIJ54vylaXBowYo36QCT4zJQEbpYV4XHxeKf5QnstBXZrszuetY4cukSWfyjANjv4PrzE=h128" />
+                        <img src={`${logoUrl}`} />
                     </div>
                     <div className="title">Amahi</div>
                     <div className="description">Making Home Networking and Storage Simple</div>
