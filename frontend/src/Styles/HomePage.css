@@ -52,9 +52,10 @@ svg{
         width: 70%;
     }
     .recommended-wrapper{
-        width: 25%;
+        width: 30%;
         display: flex;
         flex-direction: column;
+        padding-left: 12px;
     }
 }
 
@@ -73,10 +74,21 @@ svg{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 3px 10px 3px;
     border-bottom: 1px solid #bebebe;
     font-size: small;
     font-weight: 500;
+}
+
+.orgs-item div{
+    display: flex;
+    align-items: center;
+}
+
+.orgs-item svg{
+    font-size: 18px;
+    margin-left: 4px;
 }
 
 .recommended-orgs-list{

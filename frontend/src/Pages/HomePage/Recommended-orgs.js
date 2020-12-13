@@ -2,6 +2,7 @@ import React from 'react';
 import StarIcon from '@material-ui/icons/Star';
 
 const RecommendedOrgs = () => {
+
     return(
         <div className="recommended-orgs-wrapper">
             <p>

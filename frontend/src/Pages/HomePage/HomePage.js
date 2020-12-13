@@ -38,6 +38,41 @@ const HomePage = () => {
                                 yrList=''
                                 noOfTimes=""
                             />
+                            <OPCard
+                                logoUrl="//lh3.googleusercontent.com/nH1tK1QplL7izpbqjDORl6AEo6BsJv33FlRKoVg4Oobvui0gl2KTmkmEVsYVdPaV4SIkeW1cXV9HVl0uo65gePxLZlMd-7n6=h128"
+                                title=""
+                                decription=""
+                                yrList=''
+                                noOfTimes=""
+                            />
+                            <OPCard
+                                logoUrl="//lh3.googleusercontent.com/nH1tK1QplL7izpbqjDORl6AEo6BsJv33FlRKoVg4Oobvui0gl2KTmkmEVsYVdPaV4SIkeW1cXV9HVl0uo65gePxLZlMd-7n6=h128"
+                                title=""
+                                decription=""
+                                yrList=''
+                                noOfTimes=""
+                            />
+                            <OPCard
+                                logoUrl="//lh3.googleusercontent.com/nH1tK1QplL7izpbqjDORl6AEo6BsJv33FlRKoVg4Oobvui0gl2KTmkmEVsYVdPaV4SIkeW1cXV9HVl0uo65gePxLZlMd-7n6=h128"
+                                title=""
+                                decription=""
+                                yrList=''
+                                noOfTimes=""
+                            />
+                            <OPCard
+                                logoUrl="//lh3.googleusercontent.com/nH1tK1QplL7izpbqjDORl6AEo6BsJv33FlRKoVg4Oobvui0gl2KTmkmEVsYVdPaV4SIkeW1cXV9HVl0uo65gePxLZlMd-7n6=h128"
+                                title=""
+                                decription=""
+                                yrList=''
+                                noOfTimes=""
+                            />
+                            <OPCard
+                                logoUrl="//lh3.googleusercontent.com/nH1tK1QplL7izpbqjDORl6AEo6BsJv33FlRKoVg4Oobvui0gl2KTmkmEVsYVdPaV4SIkeW1cXV9HVl0uo65gePxLZlMd-7n6=h128"
+                                title=""
+                                decription=""
+                                yrList=''
+                                noOfTimes=""
+                            />
                         </div>    
                     </div>
                     <div className="recommended-wrapper">
