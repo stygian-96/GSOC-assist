@@ -3,7 +3,6 @@
 Aim of this project is to reduce the efforts of GSOC aspirants and help them to find organisations that interests them. 
 
 ### App flow
-(different components of the app)
 
 App :-
   - Home Page
