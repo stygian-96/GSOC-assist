@@ -1,18 +1,29 @@
-const express = require('express')
-const router = express.Router()
-const { 
-    postLogin,
-    postRegister,
-    getUserDetails,
-    updateUserDetails,
-    deleteUser
-} = require('../controllers/authControllers')
-const auth = require('../middlewares/auth')
+const router = require('express').Router();
+const passport = require('passport');
 
-router.post('/user/register', postRegister)
-router.post('/user/login', postLogin)
-router.get('/user/getUserInfo', auth, getUserDetails)
-router.patch('/user/updateUserInfo', auth, updateUserDetails)
-router.delete('/user/deleteUser', auth, deleteUser)
+// auth login
+router.get('/login', (req, res) => {
+    if(!req.user){
+        res.send({message: "Not loggedIn"});
+    }
+    else{
+        res.send({message: "Already LoggedIn"});
+    }
+});
 
-module.exports = router
+//auth logout
+router.get('/logout', (req,res) => {
+    req.logout();
+    res.send({message: "LoggedOut Sucessfully"});
+})
+
+router.get('/github', passport.authenticate('github', {
+    scope: ['profile']
+}));
+
+router.get('/github/callback', passport.authenticate('github'), (req,res) => {
+    // res.send(req.user);
+    res.redirect('/profile/');
+});
+
+module.exports = router;
