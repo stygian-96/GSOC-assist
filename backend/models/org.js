@@ -1,3 +1,6 @@
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
 const orgSchema = new Schema({
     title: {
         type: String,
@@ -14,6 +17,9 @@ const orgSchema = new Schema({
         type: Number
     },
     yearsOfAppearance: {
+        type: [String]
+    },
+    techStack: {
         type: [String]
     },
     noOfProjects: {

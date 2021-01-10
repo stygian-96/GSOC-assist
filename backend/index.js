@@ -6,6 +6,8 @@ const User = require('./models/user')
 
 // Requiring routes
 const authRoutes = require('./routes/authRoutes')
+const orgRoutes= require('./routes/orgRoutes')
+const projRoutes = require('./routes/projRoutes')
 
 const app = express()
 
@@ -18,7 +20,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 // Use routes
-app.use(authRoutes)
+app.use('/user', authRoutes)
+app.use('/org', orgRoutes)
+app.use('/proj', projRoutes)
 
 const PORT = process.env.PORT || 3000
 
