@@ -17,6 +17,7 @@ svg{
 }
 
 .tab-links-wrapper div a{
+<<<<<<< HEAD
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -77,6 +78,80 @@ svg{
     border-bottom: 1px solid #bebebe;
     font-size: small;
     font-weight: 500;
+=======
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #5c5c5c;
+    padding: 10px;
+}
+
+.tab-links-wrapper div a i svg{
+    display: block;
+    margin: auto;
+    padding: 0px 5px;
+}
+/* Main Content Wrapper*/
+@media(max-width: 960px){
+    .main-content-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-content {
+        width: 100%;
+    }
+    .recommended-wrapper {
+        display: none;
+    }
+}
+
+@media(min-width: 960px){
+    .main-content-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-content{
+        width: 70%;
+    }
+    .recommended-wrapper{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 12px;
+    }
+}
+
+.recommended-wrapper{
+    margin: 85px auto 0px auto;
+}
+
+.recommended-orgs-wrapper{
+    border: 1px solid #A7A7A7;
+    border-radius: 2px;
+    padding: 0px 20px;
+}
+
+/**/
+.recommended-orgs-list .orgs-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3px 10px 3px;
+    border-bottom: 1px solid #bebebe;
+    font-size: small;
+    font-weight: 500;
+}
+
+.orgs-item div{
+    display: flex;
+    align-items: center;
+}
+
+.orgs-item svg{
+    font-size: 18px;
+    margin-left: 4px;
+>>>>>>> 62dda84872cea718cf0a50f38b3e73e88cccb1a9
 }
 
 .recommended-orgs-list{
@@ -95,6 +170,13 @@ svg{
 }
 
 .trending-orgs{
+<<<<<<< HEAD
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.recommended-orgs{
+=======
+>>>>>>> 62dda84872cea718cf0a50f38b3e73e88cccb1a9
     border-radius: 5px;
     margin-top: 20px;
 }
@@ -129,3 +211,33 @@ svg{
     padding: 0px 5px;
 }
 
+<<<<<<< HEAD
+/* Search Field Wrapper*/
+
+.search-field-wrapper{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search-field{
+    flex: 0.8;
+}
+.search-field input{
+    max-width: 100%;
+    width: 100%;
+    padding: 9px;
+    border-radius: 2px;
+    border: 1px solid #bebebe;
+    background-color: #F9F9F9;
+}
+.sort-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.sort-buttons div{
+    padding: 0px 5px;
+}
+
+=======
+>>>>>>> 62dda84872cea718cf0a50f38b3e73e88cccb1a9

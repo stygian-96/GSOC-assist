@@ -13,3 +13,5 @@ const orgsSchema = new Schema({
         required: true,
     }
 })
+
+module.exports = mongoose.model('OrgsPrefList', orgsSchema)
