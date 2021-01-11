@@ -13,6 +13,10 @@ const orgSchema = new Schema({
         type: String,
         required: true
     },
+    orgGsocLink:{
+        type: String,
+        required: true
+    },
     noOfAppearance: {
         type: Number
     },

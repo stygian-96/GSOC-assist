@@ -5,7 +5,8 @@ exports.createOrgs = async (req, res) => {
         var newOrg = Organisation({
             title: req.body.title,
             description: req.body.description,
-            orgLink: req.body.description,
+            orgLink: req.body.orgLink,
+            orgGsocLink: req.body.orgGsocLink,
             noOfAppearance: req.body.noOfAppearance,
             yearsOfAppearance: req.body.yearsOfAppearance,
             techStack: req.body.techStack,
