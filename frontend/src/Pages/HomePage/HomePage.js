@@ -38,6 +38,8 @@ const HomePage = () => {
                                 yrList=''
                                 noOfTimes=""
                             />
+<<<<<<< HEAD
+=======
                             <OPCard
                                 logoUrl="//lh3.googleusercontent.com/nH1tK1QplL7izpbqjDORl6AEo6BsJv33FlRKoVg4Oobvui0gl2KTmkmEVsYVdPaV4SIkeW1cXV9HVl0uo65gePxLZlMd-7n6=h128"
                                 title=""
@@ -73,6 +75,7 @@ const HomePage = () => {
                                 yrList=''
                                 noOfTimes=""
                             />
+>>>>>>> 62dda84872cea718cf0a50f38b3e73e88cccb1a9
                         </div>    
                     </div>
                     <div className="recommended-wrapper">
