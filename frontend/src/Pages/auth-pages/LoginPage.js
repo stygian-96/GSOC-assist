@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../../Components/Navbar'
-import {Container,Grid, TextField,makeStyles, Button} from '@material-ui/core'
+import {Container,Grid, makeStyles, Button} from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -9,52 +9,40 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#fafafa",
     },
     LoginButton: {
+        color: "#fff",
+        background: "#000",
         width: "220px",
         padding: "5px 50px 5px 50px"
+    },
+    linkForLogin: {
+        textDecoration: "none",
+        color: "#fff"
     }
 }));
 
 const Login = () => {
     const classes = useStyles();
 
-    return (
-        <div>
-            <Navbar />
-            <Container maxWidth='xs' className={classes.root}>
-                <Grid container 
-                    justify="center" 
-                    alignItems="center" 
-                    direction="column" 
-                    spacing={3}
-                >
-                    <Grid item>
-                        <TextField
-                            id="outlined-email-input"
-                            label="Email"
-                            type="email"
-                            autoComplete="current-email"
-                            variant="outlined"
-                            size="small"
-                        />
+    return(
+        <>
+            <div>
+                <Navbar />
+                <Container maxWidth='xs' className={classes.root}>
+                    <Grid container
+                        justify="center"
+                        alignItems="center"
+                        direction="column"
+                        spacing={3}
+                    >
+                        <Grid item>
+                            <Button variant="contained" className={classes.LoginButton}>
+                                <a className={classes.linkForLogin} href="http://localhost:8000/auth/github"> Log In with Github </a>
+                            </Button>
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        <TextField
-                            id="outlined-password-input"
-                            label="Password"
-                            type="password"
-                            autoComplete="current-password"
-                            variant="outlined"
-                            size="small"
-                        />
-                    </Grid>
-                    <Grid item>
-                        <Button variant="contained" color="primary" className={classes.LoginButton}>
-                            Log In
-                        </Button>
-                    </Grid>
-                </Grid>
-            </Container>
-        </div>
+                </Container>
+            </div>      
+        </>
     )
 }
 

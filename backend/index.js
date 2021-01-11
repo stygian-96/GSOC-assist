@@ -21,11 +21,15 @@ app.use(cookieSession({
     keys: [process.env.COOKIE_KEY]
 }));
 
+app.use(cors({
+    origin: "http://localhost:3001",
+    methods: "GET,POST,PUT,PATCH,DELETE"
+}))
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 app.use(passport.initialize())
 app.use(passport.session())
-app.use(cors())
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
+
 
 connectDb();
 
@@ -35,7 +39,7 @@ app.use('/auth',authRoutes);
 app.use('/org', orgRoutes)
 app.use('/proj', projRoutes)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8000
 
 app.listen(PORT, () => {
     console.log(`App is listening on PORT: ${PORT}`)

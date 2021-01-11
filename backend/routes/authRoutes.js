@@ -22,8 +22,7 @@ router.get('/github', passport.authenticate('github', {
 }));
 
 router.get('/github/callback', passport.authenticate('github'), (req,res) => {
-    // res.send(req.user);
-    res.redirect('/profile/');
+    res.redirect('http://localhost:3000/profile');
 });
 
 module.exports = router;
