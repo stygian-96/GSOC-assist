@@ -9,6 +9,9 @@ const orgSchema = new Schema({
     description: {
         type: String,
     },
+    orgLogoUrl: {
+        type: String
+    },
     orgLink: {
         type: String,
         required: true
