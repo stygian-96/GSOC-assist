@@ -5,7 +5,7 @@ var userSchema = new Schema(
     {
         name: {
             type: String,
-            required: true
+            // required: true
         },
         username: {
             type: String,

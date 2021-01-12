@@ -1,6 +1,7 @@
 import React from 'react';
+import {Redirect} from 'react-router-dom';
 import Navbar from '../../Components/Navbar'
-import {Container,Grid, makeStyles, Button} from '@material-ui/core'
+import {Container,Grid, makeStyles, Button} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,7 +42,7 @@ const Login = () => {
                         </Grid>
                     </Grid>
                 </Container>
-            </div>      
+            </div>              
         </>
     )
 }

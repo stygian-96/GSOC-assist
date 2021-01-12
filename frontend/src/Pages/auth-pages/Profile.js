@@ -3,7 +3,7 @@ import axios from 'axios';
 import { UserContext } from '../../contexts/userContext';
 
 const Profile = () => {
-    const userContext = useContext(UserContext);
+    const userContext = useContext(UserContext)
 
     useEffect(() => {
         axios.get('http://localhost:8000/profile')
@@ -17,6 +17,13 @@ const Profile = () => {
             .catch(err => {
                 userContext.userDispatch({type: "FETCH_ERROR"})
             })
+        // axios.get('http://localhost:8000/auth/login')
+        //     .then(res => {
+        //         authContext.authDispatch({type: "FETCH_SUCCESS", payload: res.data.message})
+        //     })
+        //     .catch(err => {
+        //         authContext.authDispatch({type: "FETCH_ERROR"})
+        //     })
     },[])
 
     return(
