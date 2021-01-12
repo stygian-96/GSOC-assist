@@ -4,7 +4,6 @@ export const UserContext = createContext();
 
 const initState = {
     userData:{},
-    status: ''
 }
 const reducer = (state,action) => {
     switch (action.type) {
