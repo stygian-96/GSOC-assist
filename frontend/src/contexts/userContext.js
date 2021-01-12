@@ -9,13 +9,11 @@ const reducer = (state,action) => {
     switch (action.type) {
         case 'FETCH_SUCCESS':
             return{
-                status: 'Logged In',
                 userData: action.payload
             }
         case 'FETCH_ERROR': 
             return{
                 userData: {},
-                status: "Something went wrong"
             }
         default:
             break;

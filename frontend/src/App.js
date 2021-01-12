@@ -10,16 +10,17 @@ import Profile from './Pages/auth-pages/Profile';
 function App() {
   return (
     <div className="App">
-        <UserContextProvider>
-          <BrowserRouter>
-            <Switch>
-              <Route exact path='/login' component={Login} />
-              <Route exact path='/home' component={HomePage} />
-              <Route exact path="/wishlist" component={WishListPage} />
-              <Route exact path="/profile" component={Profile} />
-            </Switch>
-          </BrowserRouter>
-        </UserContextProvider>
+      <UserContextProvider>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/home' component={HomePage} />
+            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/wishlist" component={WishListPage} />
+            <Route exact path="/profile" component={Profile} />
+          </Switch>
+        </BrowserRouter>
+      </UserContextProvider>
     </div>
   );
 }

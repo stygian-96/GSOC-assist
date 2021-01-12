@@ -3,11 +3,11 @@ import axios from 'axios';
 import { UserContext } from '../../contexts/userContext';
 
 const Profile = () => {
-    const userContext = useContext(UserContext);
+    const userContext = useContext(UserContext)
+
     useEffect(() => {
         axios.get('http://localhost:8000/profile')
             .then(res => {
-                console.log(res);
                 if(res.data.message === "Not loggedIn"){
                     window.location.href = "http://localhost:3000/login"
                 } else {
